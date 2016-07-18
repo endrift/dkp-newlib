@@ -214,7 +214,7 @@ int	_EXFUN(fgetpos, (FILE *, _fpos_t *));
 #else
 int	_EXFUN(fgetpos, (FILE *__restrict, fpos_t *__restrict));
 #endif
-int	_EXFUN(fseek, (FILE *, long, int));
+int	_EXFUN(fseek, (FILE *, off_t, int));
 #ifdef _COMPILING_NEWLIB
 int	_EXFUN(fsetpos, (FILE *, const _fpos_t *));
 #else
@@ -422,7 +422,7 @@ size_t	_EXFUN(_fread_r, (struct _reent *, _PTR __restrict, size_t _size, size_t 
 size_t	_EXFUN(_fread_unlocked_r, (struct _reent *, _PTR __restrict, size_t _size, size_t _n, FILE *__restrict));
 int	_EXFUN(_fscanf_r, (struct _reent *, FILE *__restrict, const char *__restrict, ...)
                _ATTRIBUTE ((__format__ (__scanf__, 3, 4))));
-int	_EXFUN(_fseek_r, (struct _reent *, FILE *, long, int));
+int	_EXFUN(_fseek_r, (struct _reent *, FILE *, off_t, int));
 int	_EXFUN(_fseeko_r,(struct _reent *, FILE *, _off_t, int));
 long	_EXFUN(_ftell_r, (struct _reent *, FILE *));
 _off_t	_EXFUN(_ftello_r,(struct _reent *, FILE *));

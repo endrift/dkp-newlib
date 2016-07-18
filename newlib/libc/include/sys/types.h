@@ -235,6 +235,9 @@ typedef	__suseconds_t	suseconds_t;
 
 typedef	__int64_t	sbintime_t;
 
+typedef __uint32_t fsblkcnt_t;
+typedef __uint32_t fsfilcnt_t;
+
 #include <sys/features.h>
 
 
