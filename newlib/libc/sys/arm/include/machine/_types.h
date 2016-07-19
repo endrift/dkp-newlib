@@ -5,9 +5,10 @@
 
 /* Use 64bit types */
 typedef __int64_t _off_t;
-#define __off_t_defined 1
+#define __machine_off_t_defined
 
 typedef __int64_t _fpos_t;
-#define __fpos_t_defined 1
+#define __machine_fpos_t_defined
 
 #endif
+
